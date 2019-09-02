@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: [MYID]-sample-rolebinding
+  namespace: [MYNS]
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: [MYID]-sample-role
+subjects:
+- kind: ServiceAccount
+  name: [MYID]-sample-serviceaccount
+  namespace: [MYNS]
