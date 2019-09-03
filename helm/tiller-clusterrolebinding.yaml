@@ -5,7 +5,7 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: tiller
-  namespace: kube-system
+  namespace: [MYNS]
 roleRef:
   kind: ClusterRole
   name: cluster-admin
